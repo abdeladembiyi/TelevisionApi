@@ -1,0 +1,14 @@
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\bin\Debug\netcoreapp2.1\cmsTelevision.deps.json
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\bin\Debug\netcoreapp2.1\cmsTelevision.runtimeconfig.json
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\bin\Debug\netcoreapp2.1\cmsTelevision.runtimeconfig.dev.json
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\bin\Debug\netcoreapp2.1\cmsTelevision.dll
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\bin\Debug\netcoreapp2.1\cmsTelevision.pdb
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\obj\Debug\netcoreapp2.1\cmsTelevision.csprojAssemblyReference.cache
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\obj\Debug\netcoreapp2.1\cmsTelevision.csproj.CoreCompileInputs.cache
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\obj\Debug\netcoreapp2.1\cmsTelevision.RazorAssemblyInfo.cache
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\obj\Debug\netcoreapp2.1\cmsTelevision.RazorAssemblyInfo.cs
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\obj\Debug\netcoreapp2.1\cmsTelevision.AssemblyInfoInputs.cache
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\obj\Debug\netcoreapp2.1\cmsTelevision.AssemblyInfo.cs
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\obj\Debug\netcoreapp2.1\cmsTelevision.RazorTargetAssemblyInfo.cache
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\obj\Debug\netcoreapp2.1\cmsTelevision.dll
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\obj\Debug\netcoreapp2.1\cmsTelevision.pdb
