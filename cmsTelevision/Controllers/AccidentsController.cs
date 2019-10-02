@@ -26,7 +26,24 @@ namespace cmsTelevision.Controllers
         {
             return _context.Accident;
         }
-
+        // GET: api/Accidents
+        [HttpGet("count")]
+        public int GetAccidentCount()
+        {
+            return _context.Accident.Count();
+        }
+        [HttpGet("last")]
+        public DateTime? GetAccidentlast()
+        {
+            return _context.Accident.Select(a => a.DateAccident).LastOrDefault();
+        }
+        [HttpGet("dif")]
+        public int GetCount()
+        {
+            DateTime date = (DateTime)_context.Accident.Select(a => a.DateAccident).LastOrDefault();
+            var nbr = DateTime.Now - date;
+            return nbr.Days;
+        }
         // GET: api/Accidents/5
         [HttpGet("{id}")]
         public async Task<IActionResult> GetAccident([FromRoute] int id)

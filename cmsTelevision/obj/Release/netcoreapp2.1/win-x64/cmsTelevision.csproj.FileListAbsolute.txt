@@ -1,0 +1,17 @@
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\bin\Release\netcoreapp2.1\win-x64\hostpolicy.dll
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\bin\Release\netcoreapp2.1\win-x64\hostfxr.dll
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\bin\Release\netcoreapp2.1\win-x64\cmsTelevision.exe
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\bin\Release\netcoreapp2.1\win-x64\cmsTelevision.deps.json
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\bin\Release\netcoreapp2.1\win-x64\cmsTelevision.runtimeconfig.json
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\bin\Release\netcoreapp2.1\win-x64\cmsTelevision.runtimeconfig.dev.json
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\bin\Release\netcoreapp2.1\win-x64\cmsTelevision.dll
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\bin\Release\netcoreapp2.1\win-x64\cmsTelevision.pdb
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\obj\Release\netcoreapp2.1\win-x64\cmsTelevision.csprojAssemblyReference.cache
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\obj\Release\netcoreapp2.1\win-x64\cmsTelevision.csproj.CoreCompileInputs.cache
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\obj\Release\netcoreapp2.1\win-x64\cmsTelevision.RazorAssemblyInfo.cache
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\obj\Release\netcoreapp2.1\win-x64\cmsTelevision.RazorAssemblyInfo.cs
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\obj\Release\netcoreapp2.1\win-x64\cmsTelevision.AssemblyInfoInputs.cache
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\obj\Release\netcoreapp2.1\win-x64\cmsTelevision.AssemblyInfo.cs
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\obj\Release\netcoreapp2.1\win-x64\cmsTelevision.RazorTargetAssemblyInfo.cache
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\obj\Release\netcoreapp2.1\win-x64\cmsTelevision.dll
+C:\Users\biyia\source\repos\cmsTelevision\cmsTelevision\obj\Release\netcoreapp2.1\win-x64\cmsTelevision.pdb

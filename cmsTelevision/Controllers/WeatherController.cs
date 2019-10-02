@@ -4,8 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using ForecastIO;
-using ForecastIO.Extensions;
 namespace cmsTelevision.Controllers
 {
     [Route("api/[controller]")]
@@ -16,13 +14,6 @@ namespace cmsTelevision.Controllers
      //   private static readonly float latitude = 33.478f;
        // private static readonly float longtitude = -7.4322f;
 
-        [HttpGet]
-        public async Task<ForecastIOResponse> GetWeather()
-
-        {
-            var request = new ForecastIORequest  6EY, 33.478f, -7.4322f, DateTime.Now, Unit.si);
-            var response = await request.GetAsync();
-            return response;
-        }
+        
     }
 }

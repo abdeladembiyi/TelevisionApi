@@ -16,6 +16,7 @@ namespace cmsTelevision.Models
         }
 
         public virtual DbSet<Accident> Accident { get; set; }
+        public virtual DbSet<Demarrage> Demarrage { get; set; }
         public virtual DbSet<Regle> Regle { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -52,6 +53,21 @@ namespace cmsTelevision.Models
                 entity.Property(e => e.NombreBlessure).HasColumnName("nombreBlessure");
 
                 entity.Property(e => e.NombreMort).HasColumnName("nombreMort");
+            });
+
+            modelBuilder.Entity<Demarrage>(entity =>
+            {
+                entity.ToTable("demarrage");
+
+                entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.Date)
+                    .HasColumnName("date")
+                    .HasColumnType("datetime");
+
+                entity.Property(e => e.Nombre).HasColumnName("nombre");
+                entity.Property(e => e.Type).HasMaxLength(100)
+                    .IsUnicode(false);
             });
 
             modelBuilder.Entity<Regle>(entity =>
