@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ProjectExtensions>
-    <VisualStudio><UserProperties properties_4lunchsettings_1json_JsonSchema="" appsettings_1json_JsonShema="" /></VisualStudio>
+    <VisualStudio><UserProperties appsettings_1json__JsonSchema="" properties_4lunchsettings_1json_JsonSchema="" appsettings_1json_JsonShema="" /></VisualStudio>
   </ProjectExtensions>
 
 </Project>

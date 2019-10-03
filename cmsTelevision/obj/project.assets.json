@@ -12540,23 +12540,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\biyia\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Abdeladem Biyi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\biyia\\source\\repos\\cmsTelevision\\cmsTelevision\\cmsTelevision.csproj",
+      "projectUniqueName": "D:\\ATSProject\\TelevisionApi\\cmsTelevision\\cmsTelevision.csproj",
       "projectName": "cmsTelevision",
-      "projectPath": "C:\\Users\\biyia\\source\\repos\\cmsTelevision\\cmsTelevision\\cmsTelevision.csproj",
-      "packagesPath": "C:\\Users\\biyia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\biyia\\source\\repos\\cmsTelevision\\cmsTelevision\\obj\\",
+      "projectPath": "D:\\ATSProject\\TelevisionApi\\cmsTelevision\\cmsTelevision.csproj",
+      "packagesPath": "C:\\Users\\Abdeladem Biyi\\.nuget\\packages\\",
+      "outputPath": "D:\\ATSProject\\TelevisionApi\\cmsTelevision\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\biyia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Abdeladem Biyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12603,10 +12599,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
