@@ -20,7 +20,6 @@ D:\ATSProject\TelevisionApi\cmsTelevision\bin\Release\netcoreapp2.1\cmsTelevisio
 D:\ATSProject\TelevisionApi\cmsTelevision\bin\Release\netcoreapp2.1\cmsTelevision.runtimeconfig.dev.json
 D:\ATSProject\TelevisionApi\cmsTelevision\bin\Release\netcoreapp2.1\cmsTelevision.dll
 D:\ATSProject\TelevisionApi\cmsTelevision\bin\Release\netcoreapp2.1\cmsTelevision.pdb
-D:\ATSProject\TelevisionApi\cmsTelevision\obj\Release\netcoreapp2.1\cmsTelevision.csprojAssemblyReference.cache
 D:\ATSProject\TelevisionApi\cmsTelevision\obj\Release\netcoreapp2.1\cmsTelevision.RazorAssemblyInfo.cache
 D:\ATSProject\TelevisionApi\cmsTelevision\obj\Release\netcoreapp2.1\cmsTelevision.RazorAssemblyInfo.cs
 D:\ATSProject\TelevisionApi\cmsTelevision\obj\Release\netcoreapp2.1\cmsTelevision.AssemblyInfoInputs.cache

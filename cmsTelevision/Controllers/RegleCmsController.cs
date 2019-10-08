@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using cmsTelevision.Models;
+using Microsoft.AspNetCore.Hosting;
+using System.Text.RegularExpressions;
+using System.IO;
 
 namespace cmsTelevision.Controllers
 {
@@ -13,11 +16,14 @@ namespace cmsTelevision.Controllers
     [ApiController]
     public class RegleCmsController : ControllerBase
     {
-        private readonly cmsTelevisionContext _context;
+        private readonly cmsTelevisionContext _context; 
+        public static IHostingEnvironment _environment;
 
-        public RegleCmsController(cmsTelevisionContext context)
+
+        public RegleCmsController(cmsTelevisionContext context , IHostingEnvironment environment)
         {
             _context = context;
+            _environment = environment;
         }
 
         // GET: api/RegleCms
@@ -85,7 +91,7 @@ namespace cmsTelevision.Controllers
         [HttpPost]
         public async Task<IActionResult> PostRegleCms([FromBody] RegleCms regleCms)
         {
-            if (!ModelState.IsValid)
+           /* if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
@@ -93,7 +99,15 @@ namespace cmsTelevision.Controllers
             _context.RegleCms.Add(regleCms);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetRegleCms", new { id = regleCms.Id }, regleCms);
+            return CreatedAtAction("GetRegleCms", new { id = regleCms.Id }, regleCms);*/
+
+            var imagePath = ConvertImage(regleCms.Image);
+            regleCms.Image = imagePath;
+            _context.RegleCms.Add(regleCms);
+            await _context.SaveChangesAsync();
+
+
+            return CreatedAtAction("GetRegle", new { id = regleCms.Id }, regleCms);
         }
 
         // DELETE: api/RegleCms/5
@@ -120,6 +134,34 @@ namespace cmsTelevision.Controllers
         private bool RegleCmsExists(int id)
         {
             return _context.RegleCms.Any(e => e.Id == id);
+        }
+        public string ConvertImage(string image)
+        {
+            // var base64Data = Regex.Match(image, @"data:image/(?<type>.+?),(?<data>.+)").Groups["data"].Value;
+            // var type = Regex.Match(image, @"data:image/(?<type>.+?),").Groups["data"].Value;
+            var match = Regex.Match(image, @"data:image/(?<type>.+?);base64,(?<data>.+)");
+            var base64Data = match.Groups["data"].Value;
+            var contentType = match.Groups["type"].Value;
+            System.Diagnostics.Debug.WriteLine(contentType);
+            var bytes = Convert.FromBase64String(base64Data);
+            string folderName = "Upload";
+            string webRootPath = _environment.WebRootPath;
+            string pathToSave = Path.Combine(webRootPath, folderName);
+
+            if (!Directory.Exists(pathToSave))
+            {
+                Directory.CreateDirectory(pathToSave);
+            }
+            var fileName = Guid.NewGuid().ToString() + "." + contentType;
+            var fullPath = Path.Combine(pathToSave, fileName);
+            var dbPath = Path.Combine(folderName, fileName);
+
+            using (var stream = new FileStream(fullPath, FileMode.Create))
+            {
+                stream.Write(bytes, 0, bytes.Length);
+                stream.Flush();
+            }
+            return dbPath;
         }
     }
 }
