@@ -40,9 +40,19 @@ namespace cmsTelevision.Controllers
         [HttpGet("dif")]
         public int GetCount()
         {
-            DateTime date = (DateTime)_context.Accident.Select(a => a.DateAccident).LastOrDefault();
-            var nbr = DateTime.Now - date;
-            return nbr.Days;
+            var date = _context.Accident.LastOrDefault();
+            DateTime dateDem = (DateTime)_context.Demarrage.Select(a => a.Date).FirstOrDefault();
+            if(date != null)
+            {
+                var nbr = DateTime.Now - (DateTime)date.DateAccident;
+                return nbr.Days;
+            }
+            else
+            {
+                var nbr = DateTime.Now - dateDem;
+                return nbr.Days;
+            }
+
         }
         // GET: api/Accidents/5
         [HttpGet("{id}")]

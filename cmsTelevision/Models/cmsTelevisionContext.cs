@@ -18,6 +18,7 @@ namespace cmsTelevision.Models
         public virtual DbSet<Accident> Accident { get; set; }
         public virtual DbSet<Demarrage> Demarrage { get; set; }
         public virtual DbSet<Message> Message { get; set; }
+        public virtual DbSet<Pointeuse> Pointeuse { get; set; }
         public virtual DbSet<Regle> Regle { get; set; }
         public virtual DbSet<RegleCms> RegleCms { get; set; }
 
@@ -93,6 +94,25 @@ namespace cmsTelevision.Models
 
                 entity.Property(e => e.Titre)
                     .HasColumnName("titre")
+                    .IsUnicode(false);
+            });
+
+            modelBuilder.Entity<Pointeuse>(entity =>
+            {
+                entity.ToTable("pointeuse");
+
+                entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.Adresse)
+                    .HasColumnName("adresse")
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Etat).HasColumnName("etat");
+
+                entity.Property(e => e.Nom)
+                    .HasColumnName("nom")
+                    .HasMaxLength(80)
                     .IsUnicode(false);
             });
 
